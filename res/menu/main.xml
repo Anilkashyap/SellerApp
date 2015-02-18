@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+      <item android:id="@+id/action_all_store"
+          android:title="All Store(0)"
+          android:showAsAction="always"
+       />
+       <item android:id="@+id/action_filter"
+          android:title="Filter"
+          android:titleCondensed="Filter"
+          
+          android:icon="@drawable/filter_icon"
+          android:showAsAction="always" />
+     
+  
+        
+</menu>
