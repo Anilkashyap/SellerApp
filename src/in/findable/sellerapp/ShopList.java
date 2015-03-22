@@ -3,6 +3,7 @@ package in.findable.sellerapp;
 import in.findable.sellerapp.utlis.Constant;
 import in.findable.sellerapp.utlis.INetworkListener;
 import in.findable.sellerapp.utlis.NetworkRequest;
+import in.findable.sellerapp.utlis.Util;
 
 import java.util.ArrayList;
 
@@ -28,6 +29,7 @@ public class ShopList extends AbstractActivity implements INetworkListener {
 	MenuItem storeMenuItem;
 	private ActionBar actionBar;
 	int shopid[];
+	private static String TAG=ShopList.class.getName();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class ShopList extends AbstractActivity implements INetworkListener {
 		actionBar = getActionBar();
 		actionBar.setHomeButtonEnabled(true);
 		actionBar.setDisplayShowTitleEnabled(false);
+		Log.i(TAG, Util.getUserName(ShopList.this));
 		// actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.action_bar_background));
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 		listView = (ListView) findViewById(R.id.lv_shoplist);

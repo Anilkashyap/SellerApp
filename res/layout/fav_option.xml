@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="20dp"
+     >
+
+    <Button
+        android:id="@+id/btn_add_by_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_by_brand"
+       
+        />
+
+    <Button
+        android:id="@+id/btn_add_by_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_add_by_brand"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_by_category"
+         />
+
+    <Button
+        android:id="@+id/btn_add_by_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_add_by_category"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_by_product"
+         />
+
+</RelativeLayout>

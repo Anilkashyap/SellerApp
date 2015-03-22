@@ -1,16 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-     
-      <item android:id="@+id/action_all_store"
-          android:title="All Store(0)"
-          android:showAsAction="always"
-       />
-       <item android:id="@+id/action_filter"
-          android:title="Filter"
-          android:titleCondensed="Filter"
-          
-          android:icon="@drawable/filter_icon"
-          android:showAsAction="always" />
-     
-  
-        
+
+    <item
+        android:id="@+id/action_all_store"
+        android:showAsAction="always"
+        android:title="All Store(0)"/>
+     <item
+        android:id="@+id/action_sync"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="always"
+        android:visible="false"
+        android:title="Sync"/>
+    <item
+        android:id="@+id/action_add_product"
+        android:icon="@drawable/icon_plus"
+        android:showAsAction="always"
+        android:visible="false"
+        android:title="Add"/>
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/filter_icon"
+        android:showAsAction="always"
+        android:title="Filter"
+        android:titleCondensed="Filter"/>
+
 </menu>
